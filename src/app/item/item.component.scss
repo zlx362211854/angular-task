@@ -1,0 +1,67 @@
+.Item {
+    padding: 0 10px;
+}
+
+.ItemTop {
+    display: flex;
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.ItemTopStatus {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #2c64dd;
+}
+
+.ItemStatusLineThrough {
+    text-decoration: line-through;
+    color: #787878;
+}
+
+.ItemTopStatusImg {
+    width: 20px;
+    height: 20px;
+}
+
+.ItemTopTitle {
+    font-size: 14px;
+    flex: 1;
+}
+
+.ItemTopOperate {
+    cursor: pointer;
+}
+
+.ItemTopOperateEdit {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.ItemTopOperateDelete {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: rgb(201, 53, 53);
+}
+
+.ItemBottom {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.InputField {
+    border-style: none;
+    width: 100%;
+    color: #787878;
+    background: none;
+
+    &:focus {
+        outline: none;
+    }
+}

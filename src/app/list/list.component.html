@@ -1,0 +1,6 @@
+<div class="lists">
+    <div *ngFor="let item of lists">
+        <app-item (getSubmitValue)="onEmitSubmit($event)" [item]="item" [refresh]="refresh">
+        </app-item>
+    </div>
+</div>

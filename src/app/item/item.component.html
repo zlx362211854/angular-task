@@ -1,0 +1,21 @@
+<div class="Item">
+    <div class="ItemTop">
+        <div class="ItemTopStatus" [ngClass]="isComplete() ? 'ItemStatusLineThrough' : ''" (click)="handleDone()">Done
+        </div>
+        <div class="ItemTopTitle">
+            <span *ngIf="!isEdit">{{item?.title}}</span>
+            <input class="InputField" type="text" *ngIf="isEdit" [(ngModel)]="editedTitle">
+        </div>
+        <div class="ItemTopOperate">
+            <span class="ItemTopOperateEdit" (click)="handleEdit()">{{isEdit ? 'ok' : 'edit'}}</span>
+            <span class="ItemTopOperateDelete" (click)="handleDelete()">delete</span>
+            <span class="material-icons">
+                delete
+            </span>
+        </div>
+    </div>
+    <div class="ItemBottom">
+        <span *ngIf="!isEdit">{{item?.description}}</span>
+        <input class="InputField" type="text" *ngIf="isEdit" [(ngModel)]="editedDescription">
+    </div>
+</div>
